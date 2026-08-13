@@ -26,7 +26,7 @@ export default function AuthModal({ onClose }: Props) {
       alert("Signed up! You are logged in for demo.");
       onClose();
     } else {
-      if (!users[email]) return alert("No account found for this email (demo stores accounts locally).);
+      if (!users[email]) return alert("No account found for this email (demo stores accounts locally).");
       localStorage.setItem("sc_user", JSON.stringify(users[email]));
       alert("Logged in!");
       onClose();
