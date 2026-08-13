@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  @apply bg-gradient-to-b from-white to-slate-50 text-slate-800 antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* message bubbles */
+.msg {
+  max-width: 70%;
+  word-break: break-word;
+}
+.msg.me {
+  @apply bg-primary text-white rounded-2xl rounded-br-none px-4 py-2;
+}
+.msg.them {
+  @apply bg-white text-slate-800 border border-slate-200 rounded-2xl rounded-bl-none px-4 py-2;
+}
+
+/* nice scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, .2);
+  border-radius: 9999px;
+}
