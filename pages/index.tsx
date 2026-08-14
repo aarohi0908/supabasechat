@@ -48,8 +48,8 @@ export default function Home() {
             <div className="mt-4 text-sm">
               <div className="text-slate-700">
                 Support:{" "}
-                <a href="mailto:supabasechatsupport@proton.me" className="text-primary underline">
-                  supabasechatsupport@proton.me
+                <a href="mailto:strangerchatsupport@atomicmail.io" className="text-primary underline">
+                  strangerchatsupport@atomicmail.io
                 </a>
               </div>
 
