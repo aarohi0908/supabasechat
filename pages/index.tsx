@@ -20,7 +20,6 @@ export default function Home() {
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-indigo-500 flex items-center justify-center text-white text-xl font-bold animate-float">SC</div>
               <div>
                 <h1 className="text-3xl font-bold">StrangerChat</h1>
-                <p className="text-sm text-slate-500">A modern, privacy-friendly stranger chat UI. Demo frontend ready for Vercel.</p>
               </div>
             </div>
 
