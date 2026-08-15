@@ -52,8 +52,8 @@ export default function Home() {
                 <strong>Warning:</strong> Sometimes a few things won't work on this website because it is a student's project.
               </div>
 
-              <div className="mt-2 text-sm text-slate-500">
-                <em>We operate from Netherlands</em>
+              <div className="mt-2 text-sm text-slate-700 bg-gray-50 border border-slate-100 p-3 rounded">
+                We operate internationally. Users are responsible for complying with local laws. Illicit activity is prohibited and may result in account suspension or disclosure to authorities in response to valid legal requests. See our <a href="/terms" className="text-primary underline">Terms of Service</a>.
               </div>
 
               <div className="mt-3 text-sm text-red-800 bg-red-50 border border-red-100 p-3 rounded">
