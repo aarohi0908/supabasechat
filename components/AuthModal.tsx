@@ -65,9 +65,6 @@ export default function AuthModal({ onClose }: Props) {
           </div>
         </form>
 
-        <div className="mt-3 text-xs text-slate-400">
-          Demo note: Authentication is client-side only. For production, integrate a secure backend (Magic.link / NextAuth / Clerk / Auth0).
-        </div>
       </div>
     </div>
   );

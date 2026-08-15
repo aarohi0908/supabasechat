@@ -40,10 +40,6 @@ export default function Home() {
               </button>
             </div>
 
-            <div className="mt-6 text-sm text-slate-500">
-              <strong>Demo note:</strong> this frontend uses client-side pairing (BroadcastChannel) to demo conversations in your browser tabs. For real strangers, connect to a realtime backend (instructions in README).
-            </div>
-
             <div className="mt-4 text-sm">
               <div className="text-slate-700">
                 Support:{" "}

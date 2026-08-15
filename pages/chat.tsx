@@ -116,9 +116,6 @@ export default function ChatPage() {
                 </div>}
               </div>
 
-              <div className="mt-6 text-xs text-slate-400">
-                Demo pairing uses BroadcastChannel to let you try chat across tabs in the same browser. Replace pairing with WebSocket or WebRTC for production.
-              </div>
             </aside>
 
             <section className="md:col-span-2">
