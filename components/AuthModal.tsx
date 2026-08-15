@@ -6,6 +6,7 @@ export default function AuthModal({ onClose }: Props) {
   const [mode, setMode] = useState<"signup" | "login">("signup");
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
 
   useEffect(() => {
     const onEsc = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
@@ -17,17 +18,20 @@ export default function AuthModal({ onClose }: Props) {
     e.preventDefault();
     // Simple client-side "auth": store in localStorage. NOT secure — demo only.
     if (!email) return alert("Please provide email");
-    const users = JSON.parse(localStorage.getItem("sc_users" ) || "{}");
+    const users = JSON.parse(localStorage.getItem("sc_users") || "{}");
     if (mode === "signup") {
       if (!name) return alert("Please provide a display name");
-      users[email] = { email, name };
+      if (!phone) return alert("Please provide a phone number");
+      users[email] = { email, name, phone };
       localStorage.setItem("sc_users", JSON.stringify(users));
-      localStorage.setItem("sc_user", JSON.stringify({ email, name }));
+      localStorage.setItem("sc_user", JSON.stringify({ email, name, phone }));
       alert("Signed up! You are logged in for demo.");
       onClose();
     } else {
       if (!users[email]) return alert("No account found for this email (demo stores accounts locally).");
-      localStorage.setItem("sc_user", JSON.stringify(users[email]));
+      // attach phone if available
+      const u = users[email];
+      localStorage.setItem("sc_user", JSON.stringify({ email: u.email, name: u.name, phone: u.phone }));
       alert("Logged in!");
       onClose();
     }
@@ -47,6 +51,9 @@ export default function AuthModal({ onClose }: Props) {
             <input value={name} onChange={e => setName(e.target.value)} placeholder="Display name" className="w-full rounded-lg border px-3 py-2" />
           )}
           <input value={email} onChange={e => setEmail(e.target.value)} placeholder="Email" className="w-full rounded-lg border px-3 py-2" />
+          {mode === "signup" && (
+            <input value={phone} onChange={e => setPhone(e.target.value)} placeholder="Phone number" className="w-full rounded-lg border px-3 py-2" />
+          )}
 
           <div className="flex gap-3">
             <button type="submit" className="px-4 py-2 rounded-lg bg-primary text-white">

@@ -55,6 +55,10 @@ export default function Home() {
               <div className="mt-2 text-xs text-amber-700 bg-amber-50 border border-amber-100 p-3 rounded">
                 <strong>Warning:</strong> Sometimes a few things won't work on this website because it is a student's project.
               </div>
+
+              <div className="mt-2 text-sm text-slate-500">
+                <em>We operate from Netherlands</em>
+              </div>
             </div>
           </section>
 
