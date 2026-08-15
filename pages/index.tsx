@@ -61,7 +61,7 @@ export default function Home() {
               </div>
 
               <div className="mt-3 text-sm text-red-800 bg-red-50 border border-red-100 p-3 rounded">
-                <strong>Notice:</strong> The platform has stopped chat services from 15 August, 2:00 PM CEST. Users are requested to migrate to any other platform.
+                <strong>Notice:</strong> The platform has stopped chat services from 15 August, 3:00 PM CEST. Users are requested to migrate to any other platform.
               </div>
             </div>
           </section>
