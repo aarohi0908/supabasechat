@@ -53,7 +53,7 @@ export default function Home() {
               </div>
 
               <div className="mt-2 text-sm text-slate-700 bg-gray-50 border border-slate-100 p-3 rounded">
-                We operate internationally. Users are responsible for complying with local laws. Illicit activity is prohibited and may result in account suspension and disclosure of relevant information to law enforcement and affected parties (including victims). See our <a href="/terms" className="text-primary underline">Terms of Service</a>.
+                We operate internationally. Users are responsible for complying with local laws. Illicit activity is prohibited and may result in account suspension and disclosure of relevant information to law enforcement and affected parties (including victims).
               </div>
 
               <div className="mt-3 text-sm text-red-800 bg-red-50 border border-red-100 p-3 rounded">
